@@ -35,7 +35,7 @@ contract TokenFarm {
     }
 
     // unstake tokens
-    function unStake() public {
+    function unstakeTokens() public {
         uint256 balance = stakingBalance[msg.sender];
 
         require(balance > 0, "staking balance cannot be 0");
